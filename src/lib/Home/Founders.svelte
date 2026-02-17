@@ -18,6 +18,7 @@
   import synamediaLogo from "$logos/synamedia.svg";
   import MembersSection from "$lib/MembersSection.svelte";
   import bitmovinLogo from "$logos/bitmovin.svg";
+  import ciscoLogo from "$logos/cisco.svg";
   import ozyeginUniversityLogo from "$logos/ozyegin-university.svg";
 
   const charterMembers = [
@@ -34,6 +35,13 @@
       src: cdn77Logo,
       width: 120,
       height: 35,
+    },
+    {
+      name: "Cisco",
+      href: "https://www.cisco.com",
+      src: ciscoLogo,
+      width: 73,
+      height: 39,
     },
     {
       name: "RED5",
