@@ -4,12 +4,13 @@
 
   import anchorIcon from "$icons/anchor.svg?raw";
   import Text from "$lib/Text.svelte";
+  import { emails } from "$lib/utils/routes";
 
   const data = [
     {
       title: "General support",
       text: "For questions about OpenMOQ or help with resources.",
-      link: "support@openmoq.org",
+      link: emails.admin,
     },
     {
       title: "Membership & partnerships",
@@ -19,7 +20,7 @@
     {
       title: "Media requests",
       text: "For interviews, press inquiries, or official statements.",
-      link: "director@openmoq.org",
+      link: emails.director,
     },
     {
       title: "Mailing address",

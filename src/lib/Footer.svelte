@@ -7,7 +7,7 @@
   import List from "./List.svelte";
   import Text from "./Text.svelte";
   import Title from "./Title.svelte";
-  import { external } from "./utils/routes";
+  import { emails, external } from "./utils/routes";
 
   // import githubIcon from '$icons/github.svg?raw';
 </script>
@@ -42,7 +42,9 @@
           </div>
 
           <div class="buttons">
-            <Button href={external.join} withArrow>Join the initiative</Button>
+            <Button href={`mailto:${emails.membership}`} withArrow
+              >Join the initiative</Button
+            >
           </div>
         </div>
       </div>

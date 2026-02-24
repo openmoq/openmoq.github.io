@@ -10,6 +10,12 @@ export const external = {
   join: "https://docs.google.com/forms/d/e/1FAIpQLScfrbs7p6QPfCLfchBkJw6IADUF7I_ud11jFyKONuNEKnTEjA/viewform?usp=send_form",
 };
 
+export const emails = {
+  membership: "membership@openmoq.org",
+  admin: "admin@openmoq.org",
+  director: "director@openmoq.org",
+};
+
 export const indexSections = {
   why: "why",
   progress: "progress",

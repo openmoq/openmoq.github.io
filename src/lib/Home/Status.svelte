@@ -24,12 +24,13 @@
     {
       // date: '2025/9',
       title: "Company setup",
-      description: "Legal structure & governance in progress",
+      description: "Legal structure & governance completed",
       state: "completed",
     },
     {
-      title: "MVP Components",
-      description: "Core infrastructure development upcoming",
+      title: "Software development",
+      description: "Core infrastructure development in progress",
+      state: "in progress",
     },
   ] as const;
 </script>
