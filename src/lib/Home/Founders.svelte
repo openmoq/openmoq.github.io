@@ -18,6 +18,7 @@
   import synamediaLogo from "$logos/synamedia.svg";
   import MembersSection from "$lib/MembersSection.svelte";
   import bitmovinLogo from "$logos/bitmovin.svg";
+  import wowzaLogo from "$logos/wowza.svg";
   import ciscoLogo from "$logos/cisco.svg";
   import ozyeginUniversityLogo from "$logos/ozyegin-university.svg";
 
@@ -78,8 +79,15 @@
       name: "Vindral",
       href: "https://vindral.com",
       src: vindralLogo,
-      width: 146,
-      height: 30,
+      width: 160,
+      height: 35,
+    },
+    {
+      name: "Wowza",
+      href: "https://www.wowza.com",
+      src: wowzaLogo,
+      width: 135,
+      height: 45,
     },
   ];
 
