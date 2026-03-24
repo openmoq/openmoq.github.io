@@ -19,6 +19,7 @@
   import MembersSection from "$lib/MembersSection.svelte";
   import bitmovinLogo from "$logos/bitmovin.svg";
   import wowzaLogo from "$logos/wowza.svg";
+  import youtubeLogo from "$logos/youtube.svg";
   import ciscoLogo from "$logos/cisco.svg";
   import ozyeginUniversityLogo from "$logos/ozyegin-university.svg";
 
@@ -57,6 +58,13 @@
       src: synamediaLogo,
       width: 150,
       height: 38,
+    },
+    {
+      name: "YouTube",
+      href: "https://www.youtube.com/",
+      src: youtubeLogo,
+      width: 120,
+      height: 30,
     },
   ];
 
