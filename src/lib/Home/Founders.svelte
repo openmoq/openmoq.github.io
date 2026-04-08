@@ -22,6 +22,8 @@
   import youtubeLogo from "$logos/youtube.svg";
   import ciscoLogo from "$logos/cisco.svg";
   import ozyeginUniversityLogo from "$logos/ozyegin-university.svg";
+  import nanoCosmosLogo from "$logos/nano-cosmos.svg";
+  import atemeLogo from "$logos/ateme.svg";
 
   const charterMembers = [
     {
@@ -96,6 +98,20 @@
       src: wowzaLogo,
       width: 135,
       height: 45,
+    },
+    {
+      name: "Nano cosmos",
+      href: "https://www.nanocosmos.net",
+      src: nanoCosmosLogo,
+      width: 152,
+      height: 44,
+    },
+    {
+      name: "Ateme",
+      href: "https://www.ateme.com",
+      src: atemeLogo,
+      width: 145,
+      height: 30,
     },
   ];
 
