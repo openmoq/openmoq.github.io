@@ -24,6 +24,8 @@
   import ozyeginUniversityLogo from "$logos/ozyegin-university.svg";
   import nanoCosmosLogo from "$logos/nano-cosmos.svg";
   import atemeLogo from "$logos/ateme.svg";
+  import ezdmrLogo from "$logos/ezdmr.svg";
+  import softwareMansionLogo from "$logos/software-mansion.svg";
 
   const charterMembers = [
     {
@@ -112,6 +114,20 @@
       src: atemeLogo,
       width: 145,
       height: 30,
+    },
+    {
+      name: "EZDMR",
+      href: "https://www.ezdrm.com",
+      src: ezdmrLogo,
+      width: 150,
+      height: 66,
+    },
+    {
+      name: "Software Mansion",
+      href: "https://swmansion.com",
+      src: softwareMansionLogo,
+      width: 124,
+      height: 66,
     },
   ];
 
