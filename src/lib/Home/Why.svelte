@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Container from "$lib/Container.svelte";
   import Text from "$lib/Text.svelte";
   import Title from "$lib/Title.svelte";
 
@@ -8,10 +7,8 @@
   import teamIcon from "$icons/team.svg";
   import scenarioIcon from "$icons/scenario.svg";
   import marketIcon from "$icons/market.svg";
-  import Divider from "$lib/Divider.svelte";
   import Padding from "$lib/Padding.svelte";
   import LinesSection from "$lib/LinesSection.svelte";
-  import Parallax from "$lib/Parallax.svelte";
 
   const list = [
     {

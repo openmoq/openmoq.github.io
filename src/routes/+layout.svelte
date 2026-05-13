@@ -42,6 +42,7 @@
     --color-blue: hsl(243, 57%, 54%, 1);
     --color-blue--darker: hsl(243, 57%, 34%, 1);
     --color-yellow: hsl(37, 75%, 67%, 1);
+    --color-yellow--darker: hsl(37, 75%, 27%, 1);
     --color-darkblue: hsl(251, 37%, 10%, 1);
     --color-darkblue--darker: hsl(254, 73%, 6%, 1);
     --color-gray: hsla(231, 8%, 46%, 1);
@@ -50,6 +51,8 @@
 
     --color-lines-light: hsl(252, 30%, 14%);
     --color-lines-dark: hsl(260, 25%, 9%, 0.1);
+
+    --color-link: var(--color-yellow);
   }
 
   :global * {
@@ -87,7 +90,7 @@
       text-decoration: underline;
       text-underline-offset: 3px;
       text-decoration-thickness: 1px;
-      color: var(--color-yellow);
+      color: var(--color-link);
 
       &:hover,
       &:focus {

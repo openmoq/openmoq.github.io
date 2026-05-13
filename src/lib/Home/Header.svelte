@@ -60,9 +60,19 @@
       <div class="text">
         <Text color="light" size={18} opacity={0.8} align="center" weight={300}>
           The OpenMOQ Software Consortium, initiated by industry leaders, is
-          focused on advancing MOQ-based technology through high-performance,
-          open-source software. Our mission is to deliver practical software and
-          implementations that enable the next generation of media transport.
+          focused on advancing the IETF’s <a
+            href="https://datatracker.ietf.org/group/moq/about/"
+            target="_blank"
+            rel="noopener noreferrer">MOQ</a
+          >
+          and
+          <a
+            href="https://datatracker.ietf.org/group/quic/about/"
+            target="_blank"
+            rel="noopener noreferrer">QUIC</a
+          > standards through the development of high-performance, open-source, application-level
+          software. Our mission is to deliver practical software and implementations
+          that enable the next generation of media transport.
         </Text>
       </div>
 

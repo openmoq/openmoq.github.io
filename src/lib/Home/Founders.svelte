@@ -25,7 +25,7 @@
   import nanoCosmosLogo from "$logos/nano-cosmos.svg";
   import atemeLogo from "$logos/ateme.svg";
   import ezdmrLogo from "$logos/ezdmr.svg";
-  import softwareMansionLogo from "$logos/software-mansion.svg";
+  import fishjamLogo from "$logos/fishjam.svg";
 
   const charterMembers = [
     {
@@ -123,11 +123,11 @@
       height: 66,
     },
     {
-      name: "Software Mansion",
-      href: "https://swmansion.com",
-      src: softwareMansionLogo,
-      width: 124,
-      height: 66,
+      name: "Fishjam",
+      href: "https://fishjam.swmansion.com/",
+      src: fishjamLogo,
+      width: 109,
+      height: 30,
     },
   ];
 
@@ -174,7 +174,7 @@
           maxWidth={780}
           align="center"
         >
-          OpenMOQ brings competing companies together to define a new standard
+          OpenMOQ brings competing companies together to implement new standards
           for real-time media transport
         </Title>
 
@@ -187,8 +187,9 @@
           maxWidth={550}
           align="center"
         >
-          We collaborate on the underlying protocol, while continuing to
-          differentiate through our products and services.
+          We collaborate on building application-level software and implementing
+          the standards defined by the IETF and W3C , while continuing to
+          differentiate through our products and services
         </Text>
       </div>
 
