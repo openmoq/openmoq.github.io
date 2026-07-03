@@ -21,6 +21,7 @@
   import wowzaLogo from "$logos/wowza.svg";
   import youtubeLogo from "$logos/youtube.svg";
   import ciscoLogo from "$logos/cisco.svg";
+  import pikotvLogo from "$logos/pikotv.svg";
   import ozyeginUniversityLogo from "$logos/ozyegin-university.svg";
   import nanoCosmosLogo from "$logos/nano-cosmos.svg";
   import atemeLogo from "$logos/ateme.svg";
@@ -128,6 +129,13 @@
       src: fishjamLogo,
       width: 109,
       height: 30,
+    },
+    {
+      name: "PikoTV",
+      href: "https://pikotv.com/",
+      src: pikotvLogo,
+      width: 116,
+      height: 50,
     },
   ];
 
