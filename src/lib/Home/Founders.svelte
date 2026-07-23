@@ -27,6 +27,7 @@
   import atemeLogo from "$logos/ateme.svg";
   import ezdmrLogo from "$logos/ezdmr.svg";
   import fishjamLogo from "$logos/fishjam.svg";
+  import mainstreamingLogo from "$logos/mainstreaming.svg";
 
   const charterMembers = [
     {
@@ -136,6 +137,13 @@
       src: pikotvLogo,
       width: 116,
       height: 50,
+    },
+    {
+      name: "MainStreaming",
+      href: "https://mainstreaming.com/",
+      src: mainstreamingLogo,
+      width: 195,
+      height: 40,
     },
   ];
 
