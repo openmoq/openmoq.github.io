@@ -72,6 +72,13 @@
       width: 120,
       height: 30,
     },
+    {
+      name: "Oracle",
+      href: "https://www.oracle.com/",
+      src: youtubeLogo,
+      width: 140,
+      height: 20,
+    },
   ];
 
   const standardMembers = [
