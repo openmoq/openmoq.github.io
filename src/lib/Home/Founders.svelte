@@ -28,6 +28,7 @@
   import ezdmrLogo from "$logos/ezdmr.svg";
   import fishjamLogo from "$logos/fishjam.svg";
   import mainstreamingLogo from "$logos/mainstreaming.svg";
+  import oracleLogo from "$logos/oracle.svg";
 
   const charterMembers = [
     {
@@ -75,7 +76,7 @@
     {
       name: "Oracle",
       href: "https://www.oracle.com/",
-      src: youtubeLogo,
+      src: oracleLogo,
       width: 140,
       height: 20,
     },
