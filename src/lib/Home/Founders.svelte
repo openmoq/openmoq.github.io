@@ -15,7 +15,7 @@
   import qualabsLogo from "$logos/qualabs.svg";
   import vindralLogo from "$logos/vindral.svg";
   import klagenfurtLogo from "$logos/klagenfurt.svg";
-  import synamediaLogo from "$logos/synamedia.svg";
+  import quortexLogo from "$logos/quortex.png";
   import MembersSection from "$lib/MembersSection.svelte";
   import bitmovinLogo from "$logos/bitmovin.svg";
   import wowzaLogo from "$logos/wowza.svg";
@@ -60,11 +60,11 @@
       height: 30,
     },
     {
-      name: "Synamedia",
-      href: "https://www.synamedia.com",
-      src: synamediaLogo,
+      name: "Quortex",
+      href: "https://www.quortex.io",
+      src: quortexLogo,
       width: 150,
-      height: 38,
+      height: 37,
     },
     {
       name: "YouTube",

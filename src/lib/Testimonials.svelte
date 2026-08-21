@@ -44,7 +44,7 @@
       quote:
         "With OpenMOQ we have the opportunity to design a solid and efficient reference implementation, applying careful architecture so MOQ can serve both professional distribution and large-scale direct delivery.",
       name: "Gwendal Simon",
-      company: "Synamedia",
+      company: "Quortex",
     },
     {
       photo: seanMcCarthyImage,
