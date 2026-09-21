@@ -29,6 +29,7 @@
   import fishjamLogo from "$logos/fishjam.svg";
   import mainstreamingLogo from "$logos/mainstreaming.svg";
   import oracleLogo from "$logos/oracle.svg";
+  import netactuateLogo from "$logos/netactuate.svg";
 
   const charterMembers = [
     {
@@ -152,6 +153,13 @@
       src: mainstreamingLogo,
       width: 195,
       height: 40,
+    },
+    {
+      name: "NetActuate",
+      href: "https://www.netactuate.com/",
+      src: netactuateLogo,
+      width: 179,
+      height: 50,
     },
   ];
 
