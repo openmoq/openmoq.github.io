@@ -8,7 +8,7 @@
   import headerImage from "$images/header-bg.jpg?enhanced";
   import Parallax from "$lib/Parallax.svelte";
   import Planet from "$lib/Planet.svelte";
-  import { external, getInternalHref } from "$lib/utils/routes";
+  import { external } from "$lib/utils/routes";
   import Padding from "$lib/Padding.svelte";
 
   const list = ["Ingest", "Relay", "Playback"];
@@ -85,11 +85,12 @@
         <div class="buttons">
           <Button href={external.join} withArrow>Join the initiative</Button>
           <Button
-            href={getInternalHref("progress")}
+            href={external.demos}
+            external
             variant="secondary"
             color="light"
           >
-            View progress
+            Try the demo
           </Button>
         </div>
       </Parallax>

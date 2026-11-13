@@ -1,9 +1,10 @@
 <script lang="ts">
   import { handleLinkClick } from "./utils/handleLinkClick";
-  import { getInternalHref, internal } from "./utils/routes";
+  import { external, getInternalHref, internal } from "./utils/routes";
 
   import hamburgerIcon from "$icons/hanburger.svg?raw";
   import menuCloseIcon from "$icons/menu-close.svg?raw";
+  import githubIcon from "$icons/github-outline.svg?raw";
   import { Icon } from "svelte-icon";
 
   const links = [
@@ -11,6 +12,11 @@
     { label: "Technology", href: getInternalHref("technology") },
     { label: "Members", href: getInternalHref("members") },
     { label: "Contact", href: internal.contact },
+  ];
+
+  const externalLinks = [
+    { label: "Demos", href: external.demos },
+    { label: "GitHub", href: external.github, icon: githubIcon },
   ];
 
   interface Props {
@@ -51,6 +57,24 @@
               onClose();
             }}
           >
+            {link.label}
+          </a>
+        </li>
+      {/each}
+    </ul>
+    <ul class="links external">
+      {#each externalLinks as link (link.href)}
+        <li class="item">
+          <a
+            href={link.href}
+            class="link"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick={onClose}
+          >
+            {#if link.icon}
+              <Icon data={link.icon} size="16" fill="none" stroke="currentColor" />
+            {/if}
             {link.label}
           </a>
         </li>
@@ -113,9 +137,11 @@
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     padding: 20px 15px;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     transition: background-color 0.2s ease;
   }
 
@@ -139,8 +165,16 @@
     display: block;
   }
 
+  .external {
+    border-top: 1px solid var(--color-border-light);
+  }
+
   /* Desktop styles */
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
+    .menu-container {
+      position: static;
+    }
+
     .menu-button {
       display: none;
     }
@@ -160,6 +194,16 @@
     .links {
       flex-direction: row;
       gap: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .external {
+      position: static;
+      transform: none;
+      border-top: none;
     }
 
     .link {

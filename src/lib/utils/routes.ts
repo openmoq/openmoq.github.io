@@ -7,6 +7,7 @@ export const internal = {
 
 export const external = {
   github: "https://github.com/openmoq",
+  demos: "https://demos.openmoq.org/",
   join: "https://docs.google.com/forms/d/e/1FAIpQLScfrbs7p6QPfCLfchBkJw6IADUF7I_ud11jFyKONuNEKnTEjA/viewform?usp=send_form",
 };
 

@@ -10,9 +10,11 @@
     disabled?: boolean;
     children: Snippet;
     size?: "sm" | "md";
+    /** Raw SVG markup rendered before the label */
+    icon?: string;
   } & (
-    | { onclick?: () => void; type?: "button" | "submit" }
-    | { href: string; type?: never }
+    | { onclick?: () => void; type?: "button" | "submit"; external?: never }
+    | { href: string; type?: never; external?: boolean }
   ) &
     (
       | { variant?: "primary"; color?: never }
@@ -26,6 +28,7 @@
     withArrow = false,
     disabled = false,
     color,
+    icon,
     ...rest
   }: Props = $props();
 
@@ -38,6 +41,11 @@
 </script>
 
 {#snippet buttonContent()}
+  {#if icon}
+    <span class="icon"
+      ><Icon data={icon} size="16" fill="none" stroke="currentColor" /></span
+    >
+  {/if}
   <span>{@render children()}</span>
   {#if withArrow}
     <span class="arrow"
@@ -47,7 +55,13 @@
 {/snippet}
 
 {#if "href" in rest}
-  <a href={rest.href} class={className} onclick={handleLinkClick}>
+  <a
+    href={rest.href}
+    class={className}
+    onclick={handleLinkClick}
+    target={rest.external ? "_blank" : undefined}
+    rel={rest.external ? "noopener noreferrer" : undefined}
+  >
     {@render buttonContent()}
   </a>
 {:else}
@@ -111,6 +125,10 @@
     > * {
       pointer-events: none;
     }
+  }
+
+  .icon {
+    display: flex;
   }
 
   .arrow {

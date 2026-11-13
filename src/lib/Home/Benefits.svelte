@@ -4,11 +4,13 @@
   import Text from "$lib/Text.svelte";
   import Title from "$lib/Title.svelte";
 
-  import dotsImage from "$images/dots.svg";
+  import githubIcon from "$icons/github-outline.svg?raw";
+  import Button from "$lib/Button.svelte";
   import GridList from "$lib/GridList.svelte";
   import GridListItem from "$lib/GridListItem.svelte";
   import Subtitle from "$lib/Subtitle.svelte";
   import Padding from "$lib/Padding.svelte";
+  import { external } from "$lib/utils/routes";
 
   const benefits = [
     {
@@ -43,14 +45,14 @@
 <Section background="light" overflow>
   <Container>
     <Padding tag="div" top={100} bottom={100} position="relative">
-      <img src={dotsImage} alt="" width={812} height={409} class="dots" />
       <Title
         level={2}
         color="dark"
         size={40}
         weight={500}
+        align="center"
+        balance
         className="mb-20"
-        maxWidth={450}
       >
         MOQ is designed for tunable latency regimes
       </Title>
@@ -59,12 +61,25 @@
         size={16}
         weight={400}
         opacity={0.6}
-        className="mb-80"
-        maxWidth={450}
+        align="center"
+        className="mb-40"
       >
         From real-time interactive experiences to sub-second live streaming to
         on-demand playback.
       </Text>
+
+      <div class="buttons mb-80">
+        <Button href={external.demos} external withArrow>See MOQ in action</Button>
+        <Button
+          href={external.github}
+          external
+          icon={githubIcon}
+          variant="secondary"
+          color="dark"
+        >
+          Explore the code
+        </Button>
+      </div>
 
       <Subtitle level={3}>Key benefits of using MOQ</Subtitle>
 
@@ -92,9 +107,10 @@
 </Section>
 
 <style>
-  .dots {
-    position: absolute;
-    top: 0;
-    left: 50%;
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
   }
 </style>
